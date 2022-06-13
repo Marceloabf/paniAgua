@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+/* ---CONSTANTES---- */
+.container{
+    margin: 0 2rem;
+}
+/* ----HEADER---- */
+header{
+    background-image: url(./assets/image/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+header nav .logo{
+    text-align: center;
+}
+header nav .logo p{
+    font-size: 0.6rem;
+}
+header .logo span{
+    color: orange;
+}
+
+header nav h2{
+    font-size: 1.125rem;
+}
+header nav p{
+    min-width: 33%;
+    font-size: 0.875rem;
+}
+
+header .shadow{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    margin-top: 4rem;
+    padding: 1.5rem 3rem;
+
+    position: absolute;
+    left: -3.5rem;
+}
+header .container{
+    position: relative;
+}
+header .title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}               
+header .title p{
+    color: white;
+
+}
+header .title p:nth-of-type(2){
+    color: orange;
+}
+header .title p:nth-of-type(3){
+    font-weight: normal;
+}
+header .title p:nth-of-type(3) span{
+    text-decoration: underline;
+}
+
+header .container button{
+    position: relative;
+    margin-top: 1rem;
+
+    background: none;
+    border: orange 2px solid;
+    border-radius: 25px;
+
+    padding: 5px;
+
+    font-weight: 300;
+}
+header .container button::after{
+    content: "";
+    height: 2px;
+    width: 2rem;
+    display: block;
+    background: orange;
+
+    position: absolute;
+    top: 50%;
+    left: -34px;
+}
+header .container button a{
+    color: white;
+}
